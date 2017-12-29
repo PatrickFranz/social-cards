@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: rgb(39, 39, 39);
+}
+
+.container{
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 80vw;
+  background: white;
+}
+
