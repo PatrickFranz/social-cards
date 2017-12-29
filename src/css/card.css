@@ -1,29 +1,24 @@
-.card{
+.card {
   border: 1px solid black;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   min-width: 250px;
   max-width: 400px;
   padding: 10px 5px;
-  margin: 10px;
-}
+  margin: 10px; }
 
-.card .category > span{
+.card .category > span {
   background: #34495e;
   padding: 5px 4px;
   color: white;
   border-radius: 2px;
-  border-top-left-radius: 5px;
-}
+  border-top-left-radius: 5px; }
 
-.card .headline{
-  padding: 20px 10px;
-}
+.card .headline {
+  padding: 20px 10px; }
 
-.card .headline > span{
-  font-size: 1.5rem;
-}
+.card .headline > span {
+  font-size: 1.5rem; }
 
-.card .card-bottom{
-  border: 1px solid black;
-}
+.card .card-bottom {
+  border: 1px solid black; }
