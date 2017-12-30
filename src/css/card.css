@@ -5,61 +5,50 @@
   max-width: 400px;
   margin: 10px;
   font-family: 'Montserrat', sans-serif; }
-
-.card .card-top {
-  margin: 0;
-  padding: 10px 5px;
-  background: #e67e22;
-  display: flex;
-  flex-direction: column; }
-
-.card .card-top .category > span {
-  background: #34495e;
-  padding: 5px 4px;
-  color: white;
-  border-radius: 2px;
-  border-top-left-radius: 5px; }
-
-.card .card-top .headline {
-  padding: 75px 10px; }
-
-.card .card-top .headline span {
-  font-size: 2rem; }
-
-.card .card-top .usr-profile {
-  display: flex;
-  flex-direction: row;
-  background: #34495e;
-  padding: 5px;
-  max-height: 100px;
-  margin-left: auto;
-  align-items: center;
-  border-radius: 3px;
-  font-size: 0.8rem; }
-
-.card .card-top .usr-profile .usr-name {
-  color: white;
-  display: flex;
-  margin: 0 15px; }
-
-.card .card-top .usr-profile .usr-img img {
-  border-radius: 5px;
-  width: 30px;
-  height: 30px; }
-
-.card .card-bottom {
-  border-top: 1px solid black;
-  padding: 10px 5px;
-  background: white; }
-
-.card .card-bottom .btm-headline {
-  font-weight: 600; }
-
-.card .card-bottom .btm-desc {
-  margin-top: 10px;
-  font-size: 0.9rem; }
-
-.card .card-bottom .link {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #7f8c8d; }
+  .card .card-top {
+    margin: 0;
+    padding: 10px 5px;
+    background: #e67e22;
+    display: flex;
+    flex-direction: column; }
+    .card .card-top .category > span {
+      background: #34495e;
+      padding: 5px 4px;
+      color: white;
+      border-radius: 2px;
+      border-top-left-radius: 5px; }
+    .card .card-top .headline {
+      padding: 75px 10px; }
+      .card .card-top .headline span {
+        font-size: 2rem; }
+    .card .card-top .usr-profile {
+      display: flex;
+      flex-direction: row;
+      background: #34495e;
+      padding: 5px;
+      max-height: 100px;
+      margin-left: auto;
+      align-items: center;
+      border-radius: 3px;
+      font-size: 0.8rem; }
+      .card .card-top .usr-profile .usr-name {
+        color: white;
+        display: flex;
+        margin: 0 15px; }
+      .card .card-top .usr-profile .usr-img img {
+        border-radius: 5px;
+        width: 30px;
+        height: 30px; }
+  .card .card-bottom {
+    border-top: 1px solid black;
+    padding: 10px 5px;
+    background: white; }
+    .card .card-bottom .btm-headline {
+      font-weight: 600; }
+    .card .card-bottom .btm-desc {
+      margin-top: 10px;
+      font-size: 0.9rem; }
+    .card .card-bottom .link {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #7f8c8d; }

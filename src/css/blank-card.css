@@ -1,0 +1,14 @@
+.blank-card {
+  border: 1px solid black;
+  border-radius: 5px;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.blank-card img {
+  width: 100px; }
