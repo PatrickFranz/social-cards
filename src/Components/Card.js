@@ -11,9 +11,25 @@ const Card = (props) => {
         <div className="headline">
           <span>{props.headline}</span>
         </div>
+        <div className="usr-profile">
+          <span className="usr-name">
+            {props.username}
+          </span>
+          <span className="usr-img">
+            <img src={props.userImg} alt=""/>
+          </span>
+        </div>
       </div>
       <div className="card-bottom">
-        <p>Bottom</p>
+        <div className="btm-headline">
+          <span>{props.headline}</span>
+        </div>
+        <div className="btm-desc">
+        <span>{props.desc}</span>
+        </div>
+        <div className="link">
+        <span>{props.link}</span>
+        </div>
       </div>
     </div>
   );
