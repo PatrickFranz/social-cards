@@ -16,3 +16,13 @@
    width: 100px;
   }
 }
+
+@media (max-width: 960px){
+  .blank-card{
+    margin: 10px auto;
+
+    .usr-profile{
+      display: block !important;
+    }
+  }
+}

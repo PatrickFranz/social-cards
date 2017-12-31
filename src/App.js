@@ -18,7 +18,7 @@ export default class App extends React.Component{
     });
   }
 
-  populateSampleData(){
+  showData(){
     const cards = this.state.cardStack.map( (card) => {
       return(
       <Card key={card.id}
@@ -36,7 +36,7 @@ export default class App extends React.Component{
   render(){
     return(
       <div className="container">
-        {this.populateSampleData()}
+        {this.showData()}
         <BlankCard addCard={this.addCard}
                     cards={this.state.cardStack}/>
       </div>

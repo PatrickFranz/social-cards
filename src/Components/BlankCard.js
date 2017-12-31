@@ -11,15 +11,18 @@ class BlankCard extends React.Component{
     };
   }
 
+  addThisCard(){
+    this.setState({
+      clicked: false
+    });
+    this.props.addCard(this.newCard);
+  }
+
 
   componentDidMount(){
     document.addEventListener('keyup', (e) => {
       if(e.keyCode === 13){
-        this.setState({
-          clicked: false
-        });
-        this.props.addCard(this.newCard);
-
+        this.addThisCard();
       }
     });
   }
@@ -63,12 +66,9 @@ class BlankCard extends React.Component{
                      value="ADD"
                      onClick={(e) => {
                        e.preventDefault();
-                       this.setState({
-                         clicked: false
-                       });
-                       this.props.addCard(this.newCard);
-                       }
-                      }/>
+                       this.addThisCard();
+                     }}
+                       />
             </div>
             <div className="headline">
               <textarea maxLength="48" 
