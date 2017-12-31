@@ -14,18 +14,28 @@
     display: flex;
     flex-direction: column;
     
-    .category > span{
-      background: #34495e;
-      padding: 5px 4px;
-      color: white;
-      border-radius: 2px;
-      border-top-left-radius: 5px;
+    .category{
+      span, input{
+        background: #34495e;
+        padding: 5px 4px;
+        color: white;
+        border-radius: 2px;
+        border-top-left-radius: 5px;
+      }
+
+      input{
+        width: 40px;
+        font-size: 1rem;
+        text-transform: uppercase;
+      }
     }
   
     .headline{
       padding: 75px 10px;
-      span{
+      span, textarea{
         font-size: 2rem;
+        max-width: 100%;
+        background: transparent;
       }
     }
 
@@ -44,12 +54,26 @@
         color: white;
         display: flex;
         margin: 0 15px;
+
+        input{
+          background: #34495e;
+          color: white;
+        }
       }
 
-      .usr-img img{
-        border-radius: 5px;
-        width: 30px;
-        height: 30px;
+      .usr-img {
+        img{
+          border-radius: 5px;
+          width: 30px;
+          height: 30px;
+        }
+        input[type='file']{
+          display: none;
+        }
+
+        label{
+          cursor: pointer;
+        }
       }
     }
   }
@@ -66,7 +90,12 @@
 
     .btm-desc{
       margin-top: 10px;
+      padding: 0 5px;
       font-size: 0.9rem;
+      textarea{
+        width: 100%;
+        resize: none;
+      }
     }
 
     .link{
