@@ -1,3 +1,6 @@
+.blank-card {
+  min-height: 400px; }
+
 .card {
   border: 1px solid black;
   border-radius: 5px;
@@ -11,26 +14,42 @@
   padding: 10px 5px;
   background: #e67e22;
   display: flex;
+  min-height: 300px;
   flex-direction: column; }
 
-.card .card-top .category span, .card .card-top .category input {
+.card .card-top .category {
+  position: relative; }
+
+.card .card-top .category span, .card .card-top .category input[type='text'] {
   background: #34495e;
-  padding: 5px 4px;
+  padding: 5px;
   color: white;
   border-radius: 2px;
   border-top-left-radius: 5px; }
 
-.card .card-top .category input {
+.card .card-top .category span {
+  height: 250px; }
+
+.card .card-top .category input[type='text'] {
   width: 40px;
   font-size: 1rem;
   text-transform: uppercase; }
 
+.card .card-top .category input[type='submit'] {
+  position: absolute;
+  right: 0;
+  background: #34495e;
+  color: #9df188;
+  padding: 5px 10px; }
+
 .card .card-top .headline {
-  padding: 75px 10px; }
+  padding: 75px 10px;
+  min-height: 80px; }
 
 .card .card-top .headline span, .card .card-top .headline textarea {
   font-size: 2rem;
   max-width: 100%;
+  min-height: 100px;
   background: transparent; }
 
 .card .card-top .usr-profile {
@@ -38,31 +57,25 @@
   flex-direction: row;
   background: #34495e;
   padding: 5px;
-  max-height: 100px;
   margin-left: auto;
   align-items: center;
   border-radius: 3px;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  max-width: 95%; }
 
-.card .card-top .usr-profile .usr-name {
+.card .card-top .usr-profile .usr-name, .card .card-top .usr-profile .usr-img {
   color: white;
   display: flex;
-  margin: 0 15px; }
+  margin: 0 5px; }
 
-.card .card-top .usr-profile .usr-name input {
+.card .card-top .usr-profile .usr-name input, .card .card-top .usr-profile .usr-img input {
   background: #34495e;
   color: white; }
 
-.card .card-top .usr-profile .usr-img img {
+.card .card-top .usr-profile .usr-name img, .card .card-top .usr-profile .usr-img img {
   border-radius: 5px;
   width: 30px;
   height: 30px; }
-
-.card .card-top .usr-profile .usr-img input[type='file'] {
-  display: none; }
-
-.card .card-top .usr-profile .usr-img label {
-  cursor: pointer; }
 
 .card .card-bottom {
   border-top: 1px solid black;

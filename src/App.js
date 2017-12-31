@@ -12,7 +12,8 @@ export default class App extends React.Component{
     }
   }
 
-  addCard(newCard){
+  addCard(event, newCard){
+    event.preventDefault();
     this.setState({
       cardStack : [...this.state.cardStack, newCard]
     });
@@ -37,7 +38,8 @@ export default class App extends React.Component{
     return(
       <div className="container">
         {this.populateSampleData()}
-        <BlankCard addCard={this.addCard}/>
+        <BlankCard addCard={this.addCard}
+                    cards={this.state.cardStack}/>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "category" : "DEV",
     "username" : "Patrick Franz",
     "userImg" : "https://pbs.twimg.com/profile_images/725351458816708608/6rVKB93i_400x400.jpg",
@@ -9,13 +9,14 @@
     "link" : "www.tco.com"
   },
   {
-    "id": 2,
+    "id": 1,
     "category" : "PUG",
-    "username" : "Everest Franz",
+    "username" : "Everest Est",
     "userImg" : "http://i.dailymail.co.uk/i/pix/2007/04_03/EverestDM0105_468x330.jpg",
-    "headline" : "Cuddle PUGS! ALL.DAMN.DAY!!",
+    "headline" : "Cuddle PUGS! ALL.THE.DAYS!!",
     "desc" : "Just love the pug. You know you want to.",
     "link" : "www.pug.com"
   }
 ]
+
 
