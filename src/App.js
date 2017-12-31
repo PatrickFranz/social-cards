@@ -6,13 +6,21 @@ import sampleData from './sampleData.json';
 export default class App extends React.Component{
   constructor(props){
     super(props);
+    this.addCard = this.addCard.bind(this);
     this.state = {
-      sampleData: sampleData
+      cardStack: sampleData
     }
   }
 
+  addCard(event, newCard){
+    event.preventDefault();
+    this.setState({
+      cardStack : [...this.state.cardStack, newCard]
+    });
+  }
+
   populateSampleData(){
-    const cards = sampleData.map( (card) => {
+    const cards = this.state.cardStack.map( (card) => {
       return(
       <Card key={card.id}
             category={card.category}
@@ -22,7 +30,7 @@ export default class App extends React.Component{
             desc={card.desc}
             link={card.link}/>
       )
-    });
+    }); 
     return cards;
   }
 
@@ -30,7 +38,8 @@ export default class App extends React.Component{
     return(
       <div className="container">
         {this.populateSampleData()}
-        <BlankCard />
+        <BlankCard addCard={this.addCard}
+                    cards={this.state.cardStack}/>
       </div>
     );
   }

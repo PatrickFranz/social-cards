@@ -1,16 +1,16 @@
 .blank-card{
+  align-items: center;
   border: 1px solid black;
   border-radius: 5px;
-  min-width: 250px;
-  max-width: 400px;
-  margin: 10px;
-  font-family: 'Montserrat', sans-serif;
-  
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
   justify-content: center;
-  align-items: center;
-
+  margin: 10px;
+  max-width: 400px;
+  min-width: 250px;
+  min-height: 400px;
 
   img{
    width: 100px;
