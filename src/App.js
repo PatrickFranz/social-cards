@@ -12,8 +12,7 @@ export default class App extends React.Component{
     }
   }
 
-  addCard(event, newCard){
-    event.preventDefault();
+  addCard(newCard){
     this.setState({
       cardStack : [...this.state.cardStack, newCard]
     });

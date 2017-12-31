@@ -24,6 +24,7 @@
         color: white;
         border-radius: 2px;
         border-top-left-radius: 5px;
+        word-wrap: break-word;
       }
 
       span{
@@ -53,6 +54,7 @@
         max-width: 100%;
         min-height: 100px;
         background: transparent;
+        word-wrap: break-word;
       }
     }
 
@@ -95,12 +97,19 @@
 
     .btm-headline{
       font-weight: 600;
+      word-wrap: break-word;
+      span{
+        word-wrap: break-word;
+      }
     }
 
     .btm-desc{
       margin-top: 10px;
       padding: 0 5px;
       font-size: 0.9rem;
+      span{
+        word-wrap: break-word;
+      }
       textarea{
         width: 100%;
         resize: none;

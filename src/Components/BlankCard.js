@@ -11,8 +11,24 @@ class BlankCard extends React.Component{
     };
   }
 
-  render(){
 
+  componentDidMount(){
+    document.addEventListener('keyup', (e) => {
+      if(e.keyCode === 13){
+        this.setState({
+          clicked: false
+        });
+        this.props.addCard(this.newCard);
+
+      }
+    });
+  }
+
+  componentWillUnmount(){
+
+  }
+
+  render(){
     this.newCard = { 
       "id": this.props.cards.length,
       "category" : "DEV",
@@ -50,7 +66,7 @@ class BlankCard extends React.Component{
                        this.setState({
                          clicked: false
                        });
-                       this.props.addCard(e, this.newCard);
+                       this.props.addCard(this.newCard);
                        }
                       }/>
             </div>
@@ -64,6 +80,7 @@ class BlankCard extends React.Component{
             <div className="usr-profile">
               <span className="usr-name">
                 <input type="text" 
+                        maxLength="20" 
                         placeholder="Username"
                         onChange={ (e) => this.newCard.username = e.target.value || "Anonymous"}
                 />
@@ -78,7 +95,7 @@ class BlankCard extends React.Component{
           </div>
           <div className="card-bottom">
             <div className="btm-headline">
-              <span>headline</span>
+              <span></span>
             </div>
             <div className="btm-desc">
               <textarea maxLength='80' 
@@ -89,7 +106,8 @@ class BlankCard extends React.Component{
               </textarea>
             </div>
             <div className="link">
-              <input type="url" 
+              <input type="url"
+                      maxLength="48" 
                       placeholder="Url"
                       onChange={ (e) => this.newCard.link = e.target.value} />
             </div>
