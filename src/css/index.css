@@ -11,3 +11,9 @@ body {
   margin: 0 auto;
   width: 80vw;
   background: white; }
+
+.app-desc {
+  width: 80vw;
+  margin: 0 auto;
+  color: #b9b9b9;
+  text-align: center; }

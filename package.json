@@ -2,7 +2,7 @@
   "name": "social-card",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://patrickfranz.github.io/social-cards/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "node-sass": "^4.7.2",

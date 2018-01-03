@@ -8,9 +8,11 @@ const Card = (props) => {
         <div className="category">
           <span>{props.category}</span>
         </div>
-        <div className="headline">
-          <span>{props.headline}</span>
-        </div>
+        <a href={props.link}>
+          <div className="headline">
+            <span>{props.headline}</span>
+          </div>
+        </a>
         <div className="usr-profile">
           <span className="usr-name">
             {props.username}

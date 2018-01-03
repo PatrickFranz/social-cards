@@ -6,7 +6,6 @@
   margin: 10px 0 0 10px;
   font-family: 'Montserrat', sans-serif;
   
-
   .card-top{
     margin: 0;
     padding: 10px 5px;
@@ -14,6 +13,11 @@
     display: flex;
     min-height: 300px;
     flex-direction: column;
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
     
     .category{
       position: relative;
