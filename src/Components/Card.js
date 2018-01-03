@@ -28,7 +28,7 @@ const Card = (props) => {
         <span>{props.desc}</span>
         </div>
         <div className="link">
-        <span>{props.link}</span>
+          <a href={props.link} target="_blank" ><span>{props.link}</span></a>
         </div>
       </div>
     </div>
