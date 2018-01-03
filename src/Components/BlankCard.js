@@ -11,8 +11,6 @@ class BlankCard extends React.Component{
     this.state = {
       clicked: false
     };
-    this.componentDidMount = this.componentDidMount.bind(this);
-
     this.newCard = { };
     
   }
