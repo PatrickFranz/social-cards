@@ -4,11 +4,17 @@ import AddIcon from '../assets/images/add.png';
 import ProfileImage from '../assets/images/placeholder_female1.png';
 
 class BlankCard extends React.Component{
+
   constructor(props){
     super(props);
+    this.addThisCard = this.addThisCard.bind(this);
     this.state = {
       clicked: false
     };
+    this.componentDidMount = this.componentDidMount.bind(this);
+
+    this.newCard = { };
+    
   }
 
   addThisCard(){
@@ -18,21 +24,9 @@ class BlankCard extends React.Component{
     this.props.addCard(this.newCard);
   }
 
-
-  componentDidMount(){
-    document.addEventListener('keyup', (e) => {
-      if(e.keyCode === 13){
-        this.addThisCard();
-      }
-    });
-  }
-
-  componentWillUnmount(){
-
-  }
-
   render(){
-    this.newCard = { 
+
+    this.newCard = {
       "id": this.props.cards.length,
       "category" : "DEV",
       "username" : "Anonymous",
@@ -41,6 +35,7 @@ class BlankCard extends React.Component{
       "desc" : "Isn't that amazing?",
       "link" : "www.google.com"
     };
+  
     if(!this.state.clicked){
       return(
         <div className="blank-card" 
@@ -54,7 +49,13 @@ class BlankCard extends React.Component{
       );
     } else {
       return(
-        <div className='card'>
+        <div className='card'
+              onKeyUp={ (e) => {
+                if(e.keyCode === 13){
+                  this.addThisCard();
+                }
+              }
+             }>
           <div className="card-top">
             <div className="category">
               <input type="text" 
@@ -65,7 +66,7 @@ class BlankCard extends React.Component{
               <input type="submit" 
                      value="ADD"
                      onClick={(e) => {
-                       e.preventDefault();
+                       console.log(this.newCard);
                        this.addThisCard();
                      }}
                        />
@@ -82,7 +83,7 @@ class BlankCard extends React.Component{
                 <input type="text" 
                         maxLength="20" 
                         placeholder="Username"
-                        onChange={ (e) => this.newCard.username = e.target.value || "Anonymous"}
+                        onChange={ (e) => this.newCard.username = e.target.value}
                 />
               </span>
               <span className="usr-img">
