@@ -4,11 +4,10 @@
   "private": true,
   "homepage": "https://patrickfranz.github.io/social-cards/",
   "dependencies": {
-    "gh-pages": "^1.1.0",
-    "node-sass": "^4.7.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "gh-pages": "^1.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
